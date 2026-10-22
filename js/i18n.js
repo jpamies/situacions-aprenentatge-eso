@@ -32,6 +32,10 @@ export const UI = {
       <p>De moment inclou les matèries de <strong>Tecnologia i Digitalització</strong> (1r a 3r d'ESO), <strong>Tecnologia</strong> (4t) i <strong>Digitalització</strong> (4t), amb les seves competències específiques, criteris d'avaluació i sabers literals.</p>
       <h3>Com s'estructura cada situació</h3>
       <p>Segueix les orientacions del Departament d'Educació per programar situacions d'aprenentatge: context proper i repte amb sentit, objectius d'aprenentatge, vinculació amb competències específiques, criteris i sabers, els sis <em>vectors</em> del currículum, seqüència d'activitats en quatre fases (inici/exploració, desenvolupament, estructuració i aplicació/transferència), avaluació formativa i formadora amb instruments i rúbrica (NA, AS, AN, AE) i mesures i suports universals segons el Disseny Universal per a l'Aprenentatge.</p>
+      <h3>Programació de curs i cobertura</h3>
+      <p>A la pestanya <strong>Programació</strong> pots agrupar les SA d'un curs per trimestres i veure un <strong>mapa de cobertura</strong> de criteris i sabers, alertes (criteris sense avaluar, sessions que no hi caben, competències concentrades en un sol trimestre, vectors absents…) i <strong>recomanacions</strong> de contextos que cobreixen el que falta segons els recursos del centre. Per a Tecnologia i Digitalització també hi ha una vista de cicle (1r-3r), ja que el decret no reparteix els criteris per cursos.</p>
+      <h3>IA generativa opcional</h3>
+      <p>Amb una clau pròpia de l'API de Claude (botó ✨ IA) es poden generar rúbriques específiques, concretar activitats, revisar SA i programacions i proposar SA noves que cobreixin els buits. La clau només es desa al teu navegador i les peticions van directament a Anthropic. Sense clau, tota la resta funciona igual.</p>
       <h3>Privadesa</h3>
       <p>No hi ha servidor: tot funciona al navegador i les situacions desades es guarden al <code>localStorage</code> del teu dispositiu. Fes còpies amb «Exportar còpia (JSON)».</p>
       <h3>Avís</h3>
@@ -68,6 +72,10 @@ export const UI = {
       <p>Por ahora incluye las materias de <strong>Tecnología y Digitalización</strong> (1.º a 3.º de ESO), <strong>Tecnología</strong> (4.º) y <strong>Digitalización</strong> (4.º), con sus competencias específicas, criterios de evaluación y saberes.</p>
       <h3>Cómo se estructura cada situación</h3>
       <p>Sigue las orientaciones del Departament d'Educació para programar situaciones de aprendizaje: contexto cercano y reto con sentido, objetivos de aprendizaje, vinculación con competencias específicas, criterios y saberes, los seis <em>vectores</em> del currículo, secuencia de actividades en cuatro fases (inicio/exploración, desarrollo, estructuración y aplicación/transferencia), evaluación formativa y formadora con instrumentos y rúbrica (NA, AS, AN, AE) y medidas y apoyos universales según el Diseño Universal para el Aprendizaje.</p>
+      <h3>Programación de curso y cobertura</h3>
+      <p>En la pestaña <strong>Programación</strong> puedes agrupar las SA de un curso por trimestres y ver un <strong>mapa de cobertura</strong> de criterios y saberes, alertas (criterios sin evaluar, sesiones que no caben, competencias concentradas en un solo trimestre, vectores ausentes…) y <strong>recomendaciones</strong> de contextos que cubren lo que falta según los recursos del centro. Para Tecnología y Digitalización también hay una vista de ciclo (1.º-3.º), ya que el decreto no reparte los criterios por cursos.</p>
+      <h3>IA generativa opcional</h3>
+      <p>Con una clave propia de la API de Claude (botón ✨ IA) se pueden generar rúbricas específicas, concretar actividades, revisar SA y programaciones y proponer SA nuevas que cubran los huecos. La clave solo se guarda en tu navegador y las peticiones van directamente a Anthropic. Sin clave, todo lo demás funciona igual.</p>
       <h3>Privacidad</h3>
       <p>No hay servidor: todo funciona en el navegador y las situaciones guardadas se almacenan en el <code>localStorage</code> de tu dispositivo. Haz copias con «Exportar copia (JSON)».</p>
       <h3>Aviso</h3>

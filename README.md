@@ -17,6 +17,27 @@ Webapp estàtica (sense backend) per generar esborranys de **situacions d'aprene
 
 El document resultant és editable directament, es pot **desar al navegador (localStorage)**, imprimir/PDF, descarregar en HTML, copiar en Markdown o convertir en un prompt per enriquir-lo amb un assistent d'IA. Les SA desades es poden exportar/importar en JSON.
 
+## Programació de curs, cobertura i recomanacions (sense IA)
+
+- Programacions per matèria i curs: hores setmanals, setmanes per trimestre, recursos del centre i criteris prioritzats.
+- SA organitzades per trimestres, amb el recompte de sessions planificades i disponibles.
+- Mapa de cobertura de criteris i sabers (matriu SA × criteri) i vista de cicle 1r-3r per a TiD.
+- Alertes: criteris i CE sense avaluar, criteris amb una sola evidència, sabers no treballats, excés de sessions, trimestres buits, CE concentrades en un trimestre, vectors absents i SA sobrecarregades.
+- Recomanador de contextos que puntua quants buits cobreix cada context i si el centre té els recursos necessaris.
+- Revisió de coherència de cada SA (criteris i sessions, DUA, vectors, context i producte).
+- Document de programació imprimible o en HTML.
+
+## IA opcional amb clau pròpia (BYOK)
+
+Amb una clau de l'API de Claude (botó ✨ IA), el navegador crida directament l'API amb l'SDK oficial `@anthropic-ai/sdk` carregat des de jsDelivr i fa servir sortides estructurades (JSON Schema). Permet:
+
+- generar descriptors de rúbrica específics;
+- concretar les activitats de cada fase;
+- revisar una SA o la programació;
+- proposar una SA nova que cobreixi els criteris i sabers pendents (els identificadors es validen contra el currículum).
+
+La clau només es desa al `localStorage` del navegador. Model per defecte: Claude Opus 5.5 (es pot canviar a Sonnet 5.5 o Haiku 5.5).
+
 ## Executar en local
 
 ```bash

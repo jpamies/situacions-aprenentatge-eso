@@ -21,14 +21,18 @@
         <p class="sub" data-i18n="appSubtitle"></p>
       </div>
     </div>
+    <div class="top-actions">
+    <button type="button" id="aiBtn" class="ai-toggle">✨ IA</button>
     <div class="lang" role="group" aria-label="Idioma / Idioma">
       <button type="button" data-lang="ca">CA</button>
       <button type="button" data-lang="es">ES</button>
+    </div>
     </div>
   </header>
 
   <nav class="tabs" role="tablist">
     <button role="tab" data-tab="generate" data-i18n="tabGenerate"></button>
+    <button role="tab" data-tab="prog" data-i18n="tabProg"></button>
     <button role="tab" data-tab="saved" data-i18n="tabSaved"></button>
     <button role="tab" data-tab="about" data-i18n="tabAbout"></button>
   </nav>
@@ -46,8 +50,22 @@
           <button type="button" data-act="new"></button>
           <span class="status" id="status" aria-live="polite"></span>
         </div>
+        <div class="ai-tools" id="aiTools" hidden>
+          <button type="button" class="ai-btn" data-ai="rubric"></button>
+          <button type="button" class="ai-btn" data-ai="activities"></button>
+          <button type="button" class="ai-btn" data-ai="review"></button>
+        </div>
+        <div id="aiOut" aria-live="polite"></div>
+        <div id="coherence" class="coherence" hidden></div>
         <p class="hint" id="editHint" hidden></p>
         <article id="doc" class="sa-doc empty"></article>
+      </div>
+    </section>
+
+    <section id="view-prog" class="view" hidden>
+      <div class="prog-layout">
+        <aside class="panel form" id="progSettings"></aside>
+        <div id="progMain" class="prog-main"></div>
       </div>
     </section>
 
@@ -68,6 +86,8 @@
       <div class="panel prose" id="about"></div>
     </section>
   </main>
+
+  <dialog id="aiDialog" class="ai-dialog"></dialog>
 
   <script type="module" src="js/app.js"></script>
 </body>

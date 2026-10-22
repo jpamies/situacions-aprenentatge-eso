@@ -25,7 +25,7 @@ function splitSessions(n) {
 export function buildSA(p, lang) {
   const t = T[lang];
   const subj = CURRICULUM[p.subject];
-  const theme = THEMES.find((x) => x.id === p.themeId);
+  const theme = p.aiTheme || THEMES.find((x) => x.id === p.themeId);
   const L = (o) => (o ? o[lang] : "");
 
   const title = theme ? L(theme.title) : p.custom.title;
